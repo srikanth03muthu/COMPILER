@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link href="./index.css" rel="stylesheet">
+    <script src="https://kit.fontawesome.com/da8b9f5cc0.js" crossorigin="anonymous"></script>
+    <script src="index.js" type="text/JAVASCRIPT"></script>
+</head>
+<body>
+  <h1>Online compiler</h1>
+    <div class="container">
+      
+      <br>
+     <div class="left">
+     <div id="top">
+      <label><i class="fa-brands fa-html5"></i>HTML</label>  
+      <textarea placeholder="write your HTML code" rows="9" id="html-code" onkeyup=show()></textarea>
+        </div>
+     <div id="middle">
+      <label><i class="fa-brands fa-css3-alt"></i>CSS</label>
+      <textarea placeholder="write your CSS code" rows="9" id="css-code" onkeyup="show()"></textarea>
+        </div>
+     <div id="bottom">
+      <label><i class="fa-brands fa-square-js"></i>JAVASCRIPT</label>
+      <textarea placeholder="write your JAVASCRIPT code" rows="9" id="js-code" onkeyup="show()"></textarea>
+      </div>
+     </div> 
+     <div class="right">
+        <label><i class="fa-solid fa-play"></i>output<i class=" fa-rotate fa-lg fa " onclick="reset()"></i></label>
+        <iframe class="output"></iframe>
+     </div>
+    </div>
+</body>
+
+</html>
